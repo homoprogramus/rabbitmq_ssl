@@ -1,14 +1,14 @@
-# rabbitmq ssl #
+# rabbitmq ssl
 
 How to Rabbitmq with SSL on Python
 
-## 1.RabbitMQ Server ##
+## 1.RabbitMQ Server
 
 Once installed you have to add the plugin: rabbitmq_auth_mecanism_ssl
 
 ```rabbitmq-plugins enable rabbitmq_auth_mecanism_ssl```
 
-### 1.RabbitMQ configuration ###
+### 1.RabbitMQ configuration
 
 In /etc/rabbitmq, in the file rabbitmq.conf
 
@@ -33,7 +33,7 @@ In /etc/rabbitmq, in the file rabbitmq.conf
 
 The password is the one used to create the certificates.
 
-### Certificate generation  ###
+### Certificate generation
 
 Follow these steps:
 
@@ -148,7 +148,7 @@ openssl pkcs12 -export -out keycert.p12 -in cert.pem -inkey key.pem \
 
 You have to transfert client/key.pem, client/cert.pem and testca/cacert.pem to the client.
 
-## 2.Python Client ##
+## 2.Python Client
 
 A simple python client using authentication:
 
