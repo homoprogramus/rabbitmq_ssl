@@ -112,8 +112,7 @@ openssl req -x509 -config openssl.cnf -newkey rsa:2048 -days 365 \
     -out cacert.pem -outform PEM -subj /CN=MyTestCA/ -nodes
 openssl x509 -in cacert.pem -out cacert.cer -outform DER
 cd ..
-ls
-testca
+mkdir server
 cd server
 openssl genrsa -out key.pem 2048
 openssl req -new -key key.pem -out req.pem -outform PEM \
@@ -132,7 +131,6 @@ You have to replace the $(hostname) by a rabbitmq username
 
 ```
 cd ..
-ls
 mkdir client
 cd client
 openssl genrsa -out key.pem 2048
