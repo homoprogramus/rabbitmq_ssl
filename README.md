@@ -179,3 +179,11 @@ print(ch.queue_declare("sslq"))
 ch.publish("", "sslq", "abc")
 print(ch.basic_get("sslq"))
 ```
+
+## 3.Links
+
+https://www.rabbitmq.com/ssl.html
+https://github.com/rabbitmq/rabbitmq-auth-mechanism-ssl
+https://lists.rabbitmq.com/pipermail/rabbitmq-discuss/2014-April/035618.html
+https://pika.readthedocs.io/en/latest/examples/tls_mutual_authentication.html
+https://weblogs.asp.net/jeffreyabecker/Using-SSL-client-certificates-for-authentication-with-RabbitMQ
