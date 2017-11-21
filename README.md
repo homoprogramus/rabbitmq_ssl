@@ -8,7 +8,7 @@ Once installed you have to add the plugin: rabbitmq_auth_mecanism_ssl
 
 ```rabbitmq-plugins enable rabbitmq_auth_mecanism_ssl```
 
-### RabbitMQ configuration ###
+### 1.RabbitMQ configuration ###
 
 In /etc/rabbitmq, in the file rabbitmq.conf
 
